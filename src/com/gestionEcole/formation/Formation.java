@@ -132,4 +132,10 @@ public class Formation {
 		this.titre = titre;
 	}
 
+	@Override
+	public String toString() {
+		return "Formation [titre=" + titre + ", typeFormation=" + typeFormation + ", dateDebut=" + dateDebut
+				+ ", dateFin=" + dateFin + ", modules=" + modules + ", formateurs=" + formateurs + "]";
+	}
+
 }

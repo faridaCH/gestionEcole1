@@ -131,4 +131,10 @@ public class ModuleFormation {
 		this.outilsTechniques = outilsTechniques;
 	}
 
+	@Override
+	public String toString() {
+		return "ModuleFormation [nomModule=" + nomModule + ", reference=" + reference + ", nbJours=" + nbJours
+				+ ", date=" + date + ", formateur=" + formateur + ", outilsTechniques=" + outilsTechniques + "]";
+	}
+
 }

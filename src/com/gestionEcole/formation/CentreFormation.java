@@ -3,6 +3,7 @@
  */
 package com.gestionEcole.formation;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.gestionEcole.commun.Adresse;
@@ -18,6 +19,7 @@ public class CentreFormation {
 	private Adresse adresse = new Adresse("146 RUE DE PICPUS", "Paris", 75012, "France");
 	private String telephone = "08 91 65 31 57";
 	private List<Formation> formations;
+	private List<Salle> salles = new ArrayList<Salle>();
 
 	/**
 	 * 
