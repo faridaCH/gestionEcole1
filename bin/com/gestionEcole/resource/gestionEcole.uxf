@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>231</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Main
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>363</x>
+      <y>154</y>
+      <w>385</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Formation
+--
+- typeFormation : Enum (exp : altarnance distance ...)
+- dateDebut : Date
+- dateFin : Date
+- nomFormation : List
+- formateurs : List
+--
+- creationSalle()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>88</x>
+      <y>154</y>
+      <w>231</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>CentreFormation
+--
+- nom : String
+- siret : String
+- adresse : String
+- telephone : String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>484</y>
+      <w>231</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Personne
+--
+- id : Integer
+- typePersonne : Enum
+- nom : String
+- prenom : String
+- dateNaissance : Date
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>605</x>
+      <y>836</y>
+      <w>231</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Employe
+--
+- statutEmploye : Enum
+--
+gestionAbscence()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>66</x>
+      <y>858</y>
+      <w>231</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Etudiant
+--
+- statut : Enum
+- parcours : List
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>341</x>
+      <y>836</y>
+      <w>231</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Formateur
+--
+- formation : String
+- modules : List
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>693</y>
+      <w>264</w>
+      <h>187</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>220.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>429</x>
+      <y>693</y>
+      <w>44</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>451</x>
+      <y>693</y>
+      <w>286</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;240.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>44</x>
+      <y>99</y>
+      <w>726</w>
+      <h>308</h>
+    </coordinates>
+    <panel_attributes>com.gestionEcole.formation
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>33</x>
+      <y>418</y>
+      <w>836</w>
+      <h>704</h>
+    </coordinates>
+    <panel_attributes>com.gestionEcole.personne
+--
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>44</x>
+      <y>550</y>
+      <w>231</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>IEtudiantFormateur
+--
+
+--
+sePresenterCours()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>759</y>
+      <w>275</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>143</x>
+      <y>759</y>
+      <w>55</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+</diagram>
